@@ -1,0 +1,78 @@
+* {margin: 0; padding: 0;}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    overflow-x: hidden;
+}
+.container ul {
+    user-select: none;
+}
+.container {
+    height: 100%;
+}
+
+.tip {
+    color: #dd4b39;
+}
+
+.btn_group {
+    position: fixed; 
+    display: flex;
+    align-items: center;
+    bottom: 0; 
+    padding: 1em; 
+    background-color: #eee; 
+    width: 100%;
+}
+
+button[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.areas_container {
+    position: relative;
+    margin-bottom: 4.2em;
+    user-select: none;
+}
+.areas_container .area {
+    top: 0;
+    left: 0;
+    border: 2px solid #F40;
+    box-sizing: content-box;
+    cursor: all-scroll;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.areas_container .remove_area_btn {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    cursor: pointer;
+}
+.areas_container .remove_area_btn svg {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.areas_container .area .index {
+    color: #fff;
+    background: #f40;
+    padding-right: 0.25em;
+}
+
+.areas_container .area .remove {
+    position: absolute;
+    right: -0.5em;
+    top: -0.5em;
+    display: block;
+    width: 1em;
+    height: 1em;
+    color: #fff;
+    background: #f40;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1em;
+    font-size: 1.25em;
+    font-weight: bold;
+    cursor: pointer;
+}

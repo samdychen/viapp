@@ -1,0 +1,22 @@
+
+#1. webpack初始化
+
+npm install --save-dev webpack
+npm install --save-dev html-webpack-plugin
+
+#2. 新建webpack.config.js
+
+#3. webpack打包
+
+webpack
+
+#4. 静态文件复制
+
+- 拷贝 css文件，和 图片视频 文件
+
+
+#5. 查看打包文件
+
+ls -ltrh dist/src
+
+
